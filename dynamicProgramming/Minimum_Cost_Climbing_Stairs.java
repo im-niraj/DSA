@@ -8,23 +8,23 @@ public class Minimum_Cost_Climbing_Stairs {
 		int[] cost = {10,15,20};
 		int n = cost.length;
 		
-//		//solve();
+		
+		/*  Normal Recursion technique  */
 //		int ans = Math.min(solve(cost,n-1), solve(cost,n-2));
 //		System.out.println(ans);
 		
 		
-//		//solve2();  with memoization technique
+		
+		/*  Memoization technique  */
 //		int dp[] = new int[n+1];
 //		for(int i=0; i<=n; i++){
 //            dp[i] = -1;
 //        }
-//		
 //		int ans = Math.min(solve2(cost,n-1, dp), solve2(cost,n-2, dp));
 //		System.out.println(ans);
 		
 		
-		
-		//solve3();  with Tabulation technique
+		/*  Tabulation technique  */
 		System.out.println(solve3(cost,n));
 		
 	}
