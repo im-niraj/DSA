@@ -65,3 +65,45 @@ class Solution {
 4. else return false
 5. if stack is empty then true or false return
 */
+
+
+
+// Another approch without stack and hashMap
+class Solution {
+    public boolean isValid(String s) {
+        ArrayList<Character> list = new ArrayList<>();
+        
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i)=='(' || s.charAt(i)=='[' || s.charAt(i)=='{'){
+                list.add(s.charAt(i));
+            }
+            else{
+                if(s.charAt(i)==')'){
+                    if(list.size()>0 && list.get(list.size()-1) == '('){
+                        list.remove(list.size()-1);
+                    }
+                    else{
+                        return false;
+                    }
+                }
+                else if(s.charAt(i)=='}'){
+                    if(list.size()>0 && list.get(list.size()-1) == '{'){
+                        list.remove(list.size()-1);
+                    }
+                    else{
+                        return false;
+                    }
+                }
+                else if(s.charAt(i)==']'){
+                    if(list.size()>0 && list.get(list.size()-1) == '['){
+                        list.remove(list.size()-1);
+                    }
+                    else{
+                        return false;
+                    }
+                }
+            }
+        }
+        return list.size() == 0 ? true : false;
+    }
+}
