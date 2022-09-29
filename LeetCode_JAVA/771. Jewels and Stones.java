@@ -47,3 +47,37 @@ class Solution {
         
     }
 }
+
+
+// Approch 2
+/*
+
+Using key value pair by using HashMap 
+1. store all character of stones and their occurance
+2. iterate over jewels and check if this character is available in map then add their occurance in a counter variable
+3. return the counter
+
+*/
+
+
+class Solution {
+    public int numJewelsInStones(String jewels, String stones) {
+        
+       HashMap<Character, Integer> map = new HashMap<>();
+        
+        int count=0;
+        
+        for(int i=0; i<stones.length(); i++){
+            map.put(stones.charAt(i), map.getOrDefault(stones.charAt(i), 0)+1);
+        }
+        
+        
+        for(int i=0; i<jewels.length(); i++){
+            if(map.containsKey(jewels.charAt(i))){
+                count +=map.get(jewels.charAt(i));
+            }
+        }
+        
+        return count;
+    }
+}
