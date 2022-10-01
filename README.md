@@ -10,4 +10,4 @@ LeetCode : <a href="https://leetcode.com/niraj-kumar/" target="_blank">niraj-kum
 <hr/>
 
 ### Concept
-I solve some leet code questions and put in this repository for others to get some ideas.
+I solve some LeetCode, Hackerrank and CodeStudios questions and put their solutions in this repository for others to get some ideas.
