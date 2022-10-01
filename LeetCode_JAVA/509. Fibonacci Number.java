@@ -47,3 +47,24 @@ class Solution {
 // Time Complexity: O(n)
 // Auxiliary space: O(n)
 
+
+
+// Space Optimized
+class Solution {
+    public int fib(int n) {
+        
+        int a = 0;
+        int b = 1;
+        int temp = 0;
+        
+        for(int i=2; i<=n; i++){
+            temp = a + b;
+            a = b;
+            b = temp;
+        }
+        return n==0 ? a : b;
+    }
+}
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
