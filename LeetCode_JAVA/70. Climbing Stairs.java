@@ -15,6 +15,9 @@ class Solution {
     }
 }
 
+// Time Complexity O(n)
+// Space Complexity O(1)
+
 /*
 *  this approch working as an fibonacci series
 *  Like 1 2 3 5 8 13 21
