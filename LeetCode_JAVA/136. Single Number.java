@@ -40,3 +40,18 @@ class Solution {
 // this is brute force solution
 // Time Complexity = O(nLogn)
 
+
+
+/*------------------------------------------*/
+class Solution {
+    public int singleNumber(int[] nums) {
+        int ele = 0;
+        for(int i=0; i<nums.length; i++){
+            ele = ele^nums[i];
+        }
+        return ele;
+    }
+}
+
+// this is brute force solution
+// Time Complexity = O(n)
