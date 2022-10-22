@@ -9,5 +9,5 @@ class Solution {
         return step;
     }
 }
-// TC: O(n)
+// TC: O(logn)
 // SC: O(1)
