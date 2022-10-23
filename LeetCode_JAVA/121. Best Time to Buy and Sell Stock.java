@@ -1,3 +1,4 @@
+// Fastest Greedy Solution
 class Solution {
     public int maxProfit(int[] prices) {
         
@@ -14,4 +15,7 @@ class Solution {
         return max;
     }
 }
-// Fastest Greedy Solution
+
+// TC: O(n)
+// SC: O(1)
+
