@@ -17,3 +17,17 @@ var strStr = function(haystack, needle) {
     }
     return -1;
 };
+
+
+
+
+
+// -> Index Of method
+/**
+ * @param {string} haystack
+ * @param {string} needle
+ * @return {number}
+ */
+var strStr = function(haystack, needle) {
+   return haystack.indexOf(needle,0);
+};
